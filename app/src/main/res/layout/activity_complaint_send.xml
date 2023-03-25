@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/back4"
+    android:layout_height="match_parent"
+    tools:context=".Activity.ComplaintActivitySend">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_rectangle">
+        <ImageButton
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:background="@null"
+            android:layout_margin="10dp"
+            android:src="@drawable/ic_baseline_arrow_back_ios_24"
+            android:layout_height="wrap_content">
+        </ImageButton>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:text="Report"
+            android:layout_weight="0.7"
+            android:textSize="30dp"
+            android:textAlignment="center"
+            android:layout_height="wrap_content">
+        </TextView>
+
+    </LinearLayout>
+    <LinearLayout
+        android:gravity="center"
+        android:layout_marginTop="50dp"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+
+        android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_margin="20dp"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="Subject:"
+           android:textSize="20dp"
+            android:layout_height="wrap_content"></TextView>
+        <EditText
+            android:id="@+id/Subject"
+            android:layout_width="match_parent"
+            android:background="@drawable/shape_rectangle2"
+            android:padding="10dp"
+            android:layout_height="wrap_content">
+
+        </EditText>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_margin="20dp"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="Comment:"
+            android:textSize="20dp"
+            android:layout_height="wrap_content"></TextView>
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:id="@+id/comment"
+                android:layout_height="300dp"
+                android:background="@drawable/shape_rectangle2"
+
+               android:hint="Enter Your Problem" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/Report"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:padding="10dp"
+            android:rotationX="16"
+            android:text="Button" />
+    </LinearLayout>
+
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:text="If You Are Having Problem with Orders Please Enter Your Order Number"
+        android:textSize="20dp"
+        android:layout_margin="10dp"
+        android:textAlignment="center"
+        android:layout_height="wrap_content">
+    </TextView>
+
+</LinearLayout>
